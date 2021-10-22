@@ -4,7 +4,7 @@ const Service = require('./src/service');
 
 const app = express();
 const PORT = 3000;
-app.use(express.json); //nos permite recibir datos del lado del cliente
+app.use(express.json()); //nos permite recibir datos del lado del cliente
 
 app.get("/", (req, res) => {
     res.json({
